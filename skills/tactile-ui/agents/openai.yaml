@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tactile UI"
+  short_description: "Readable materials and responsive web interactions"
+  default_prompt: "Use $tactile-ui to improve one interaction with tactile materials, a plain comparison and accessibility checks."

@@ -1,0 +1,1047 @@
+{
+ "company": "Example Co",
+ "report_currency": "EUR",
+ "fx_usd_per_report_ccy": 1.08,
+ "months": {
+  "start": "2026-09",
+  "count": 16,
+  "plan_year": 2027
+ },
+ "revenue": {
+  "current_year": 30000000,
+  "plan_year": 36000000,
+  "note": "example plan"
+ },
+ "kpi_cap_share": 0.08,
+ "payment_lag_months": 2,
+ "vat_rate": 0.18,
+ "baseline_label": "Aug 2026 reseller invoices (example)",
+ "excluded_memo": [
+  "Workspace seats on the same invoice (IT)"
+ ],
+ "reconciliation": {
+  "project_usage": 149724.59,
+  "account_block": 75783.48,
+  "marketplace": 30500,
+  "excluded_items": 2500.0,
+  "invoice_subtotal": 258508.07
+ },
+ "products": [
+  {
+   "name": "Compute (VMs, Kubernetes nodes, VM management)",
+   "elasticity": 0.7
+  },
+  {
+   "name": "Networking (egress, load balancing, DNS)",
+   "elasticity": 0.9
+  },
+  {
+   "name": "Cache (managed Redis)",
+   "elasticity": 0.5
+  },
+  {
+   "name": "AI / ML inference (hosted models)",
+   "elasticity": 1.0
+  },
+  {
+   "name": "Managed SQL",
+   "elasticity": 0.3
+  },
+  {
+   "name": "Object and file storage",
+   "elasticity": 0.6
+  },
+  {
+   "name": "Emulator / device images",
+   "elasticity": 0.5
+  },
+  {
+   "name": "Logging + Monitoring",
+   "elasticity": 0.5
+  },
+  {
+   "name": "Other (registry, pipelines, messaging, secrets, misc)",
+   "elasticity": 0.5
+  }
+ ],
+ "projects": [
+  {
+   "id": "example-prod-api",
+   "group": "api",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    17616.99,
+    3760.07,
+    4390.18,
+    0.0,
+    606.46,
+    575.82,
+    0.0,
+    1202.68,
+    516.75
+   ]
+  },
+  {
+   "id": "example-qa-api",
+   "group": "api",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    2430.63,
+    487.74,
+    491.24,
+    0.0,
+    87.84,
+    70.97,
+    0.0,
+    166.12,
+    90.75
+   ]
+  },
+  {
+   "id": "example-dev-api",
+   "group": "api",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    190.3,
+    40.7,
+    48.0,
+    0.0,
+    6.65,
+    5.62,
+    0.0,
+    10.62,
+    5.66
+   ]
+  },
+  {
+   "id": "example-prod-ingest",
+   "group": "ingest",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    13247.54,
+    3978.56,
+    676.16,
+    0.0,
+    634.73,
+    2231.51,
+    955.72,
+    381.87,
+    401.19
+   ]
+  },
+  {
+   "id": "example-qa-ingest",
+   "group": "ingest",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    1739.3,
+    586.97,
+    84.98,
+    0.0,
+    88.74,
+    281.98,
+    163.25,
+    63.58,
+    55.39
+   ]
+  },
+  {
+   "id": "example-dev-ingest",
+   "group": "ingest",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    112.46,
+    40.3,
+    6.68,
+    0.0,
+    5.62,
+    22.88,
+    8.85,
+    3.9,
+    4.31
+   ]
+  },
+  {
+   "id": "example-prod-ml",
+   "group": "ml",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    6448.29,
+    1435.23,
+    1551.17,
+    6617.93,
+    194.29,
+    551.83,
+    0.0,
+    169.94,
+    381.09
+   ]
+  },
+  {
+   "id": "example-qa-ml",
+   "group": "ml",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    1028.31,
+    204.79,
+    246.72,
+    964.24,
+    28.34,
+    74.42,
+    0.0,
+    21.71,
+    53.02
+   ]
+  },
+  {
+   "id": "example-dev-ml",
+   "group": "ml",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    62.65,
+    13.78,
+    16.45,
+    49.11,
+    1.45,
+    4.73,
+    0.0,
+    1.48,
+    2.7
+   ]
+  },
+  {
+   "id": "example-prod-web",
+   "group": "web",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    5576.31,
+    1718.02,
+    0.0,
+    0.0,
+    249.56,
+    87.06,
+    0.0,
+    157.35,
+    177.26
+   ]
+  },
+  {
+   "id": "example-qa-web",
+   "group": "web",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    1065.57,
+    367.95,
+    0.0,
+    0.0,
+    42.01,
+    14.62,
+    0.0,
+    33.46,
+    34.12
+   ]
+  },
+  {
+   "id": "example-dev-web",
+   "group": "web",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    62.67,
+    19.86,
+    0.0,
+    0.0,
+    2.99,
+    1.03,
+    0.0,
+    1.7,
+    1.95
+   ]
+  },
+  {
+   "id": "example-prod-platform",
+   "group": "platform",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    3689.38,
+    1468.66,
+    136.31,
+    0.0,
+    5425.1,
+    124.23,
+    0.0,
+    831.55,
+    134.38
+   ]
+  },
+  {
+   "id": "example-qa-platform",
+   "group": "platform",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    624.38,
+    240.27,
+    19.61,
+    0.0,
+    785.45,
+    15.86,
+    0.0,
+    125.09,
+    15.66
+   ]
+  },
+  {
+   "id": "example-dev-platform",
+   "group": "platform",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    87.61,
+    32.35,
+    2.86,
+    0.0,
+    114.76,
+    2.69,
+    0.0,
+    23.02,
+    2.57
+   ]
+  },
+  {
+   "id": "example-prod-analytics",
+   "group": "analytics",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    2725.13,
+    1085.93,
+    0.0,
+    323.99,
+    333.98,
+    1342.95,
+    0.0,
+    386.64,
+    1205.33
+   ]
+  },
+  {
+   "id": "example-qa-analytics",
+   "group": "analytics",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    311.79,
+    134.35,
+    0.0,
+    39.63,
+    42.88,
+    167.3,
+    0.0,
+    40.43,
+    115.69
+   ]
+  },
+  {
+   "id": "example-dev-analytics",
+   "group": "analytics",
+   "env": "dev",
+   "in_scope": 1,
+   "values": [
+    19.87,
+    7.56,
+    0.0,
+    2.53,
+    2.15,
+    10.08,
+    0.0,
+    2.77,
+    7.94
+   ]
+  },
+  {
+   "id": "example-prod-devex",
+   "group": "devex",
+   "env": "prod",
+   "in_scope": 1,
+   "values": [
+    891.2,
+    138.24,
+    0.0,
+    0.0,
+    60.59,
+    13.0,
+    0.0,
+    22.01,
+    0.0
+   ]
+  },
+  {
+   "id": "example-qa-devex",
+   "group": "devex",
+   "env": "qa",
+   "in_scope": 1,
+   "values": [
+    824.74,
+    119.43,
+    0.0,
+    0.0,
+    48.24,
+    8.26,
+    0.0,
+    17.22,
+    0.0
+   ]
+  },
+  {
+   "id": "example-tooling",
+   "group": "tooling",
+   "env": "other",
+   "in_scope": 1,
+   "values": [
+    1030.06,
+    1120.59,
+    0.0,
+    0.0,
+    136.43,
+    590.5,
+    0.0,
+    206.35,
+    3068.55
+   ]
+  },
+  {
+   "id": "example-sandbox",
+   "group": "sandbox",
+   "env": "other",
+   "in_scope": 1,
+   "values": [
+    422.13,
+    146.58,
+    73.44,
+    36.36,
+    36.45,
+    24.89,
+    0.0,
+    17.63,
+    0.0
+   ]
+  },
+  {
+   "id": "example-prod-subsidiary",
+   "group": "subsidiary",
+   "env": "prod",
+   "in_scope": 0,
+   "values": [
+    6693.72,
+    6975.32,
+    560.28,
+    0.0,
+    2156.03,
+    173.55,
+    0.0,
+    317.89,
+    144.57
+   ]
+  },
+  {
+   "id": "example-qa-subsidiary",
+   "group": "subsidiary",
+   "env": "qa",
+   "in_scope": 0,
+   "values": [
+    1304.09,
+    1139.71,
+    130.83,
+    0.0,
+    348.75,
+    29.11,
+    0.0,
+    64.05,
+    27.03
+   ]
+  },
+  {
+   "id": "example-dev-subsidiary",
+   "group": "subsidiary",
+   "env": "dev",
+   "in_scope": 0,
+   "values": [
+    319.72,
+    322.32,
+    40.37,
+    0.0,
+    96.54,
+    9.88,
+    0.0,
+    18.85,
+    8.6
+   ]
+  },
+  {
+   "id": "example-prod-spinoff",
+   "group": "spinoff",
+   "env": "prod",
+   "in_scope": 0,
+   "values": [
+    3906.2,
+    1245.01,
+    179.4,
+    0.0,
+    219.43,
+    564.47,
+    632.85,
+    68.61,
+    155.61
+   ]
+  },
+  {
+   "id": "example-qa-spinoff",
+   "group": "spinoff",
+   "env": "qa",
+   "in_scope": 0,
+   "values": [
+    724.58,
+    219.2,
+    33.32,
+    0.0,
+    33.2,
+    98.49,
+    89.07,
+    11.71,
+    21.34
+   ]
+  },
+  {
+   "id": "example-dev-spinoff",
+   "group": "spinoff",
+   "env": "dev",
+   "in_scope": 0,
+   "values": [
+    247.06,
+    76.49,
+    11.85,
+    0.0,
+    13.46,
+    31.24,
+    36.01,
+    4.0,
+    8.08
+   ]
+  },
+  {
+   "id": "example-prod-it-dept",
+   "group": "it-dept",
+   "env": "prod",
+   "in_scope": 0,
+   "values": [
+    226.59,
+    64.17,
+    0.0,
+    67.87,
+    21.28,
+    0.0,
+    0.0,
+    24.8,
+    80.07
+   ]
+  },
+  {
+   "id": "example-qa-it-dept",
+   "group": "it-dept",
+   "env": "qa",
+   "in_scope": 0,
+   "values": [
+    68.64,
+    21.33,
+    0.0,
+    22.87,
+    8.14,
+    0.0,
+    0.0,
+    6.93,
+    20.99
+   ]
+  }
+ ],
+ "group_order": [
+  "api",
+  "ingest",
+  "ml",
+  "web",
+  "platform",
+  "analytics",
+  "devex",
+  "tooling",
+  "sandbox"
+ ],
+ "items": [
+  {
+   "name": "Kafka vendor (marketplace)",
+   "aug_invoice": 0,
+   "run_rate": 50000,
+   "elasticity": 0.0,
+   "flag": "Committed (18-month contract)",
+   "cash": "Quarterly 150,000",
+   "note": "example: 900K over 18 months, quarterly installments"
+  },
+  {
+   "name": "Lakehouse vendor (marketplace)",
+   "aug_invoice": 21000,
+   "run_rate": 23333,
+   "elasticity": 0.0,
+   "flag": "Committed (3-year order form)",
+   "cash": "Quarterly 70,000",
+   "note": "example: quarterly installment 70,000"
+  },
+  {
+   "name": "ClickHouse vendor (marketplace)",
+   "aug_invoice": 9500,
+   "run_rate": 10000,
+   "elasticity": 0.8,
+   "flag": "Variable",
+   "cash": "Monthly",
+   "usage_billed": true,
+   "note": "example: usage-billed through the marketplace"
+  },
+  {
+   "name": "KV store vendor (annual prepaid, amortized)",
+   "aug_invoice": 0,
+   "run_rate": 4500,
+   "elasticity": 0.0,
+   "flag": "Committed (annual prepaid)",
+   "cash": "Annual 54,000 (Jul)",
+   "note": "example"
+  },
+  {
+   "name": "Search vendor (annual prepaid, amortized)",
+   "aug_invoice": 0,
+   "run_rate": 3000,
+   "elasticity": 0.0,
+   "flag": "Committed (annual prepaid)",
+   "cash": "Annual 36,000 (Jul)",
+   "note": "example"
+  },
+  {
+   "name": "GCP Support",
+   "aug_invoice": 8983.48,
+   "run_rate": null,
+   "support_ratio": true,
+   "flag": "Variable (follows spend)",
+   "cash": "Monthly",
+   "note": "Support ratio x project spend"
+  },
+  {
+   "name": "Observability vendor (usage, amortized)",
+   "aug_invoice": 68000,
+   "run_rate": 70000,
+   "elasticity": 0.5,
+   "flag": "Floor (contract minimum, 3-year)",
+   "cash": "Base fee schedule (see cash events)",
+   "floor": {
+    "min_monthly": 52000,
+    "uplift_share": 0.1,
+    "note": "example: monthly minimum 52,000 plus 10% premium support"
+   },
+   "note": "example: usage 70,000/month; line = MAX(minimum x 1.10 x in-scope share, usage)"
+  }
+ ],
+ "aws_accounts": [
+  {
+   "name": "Prod",
+   "baseline": 9000
+  },
+  {
+   "name": "Dev",
+   "baseline": 3500
+  },
+  {
+   "name": "Qa",
+   "baseline": 3000
+  },
+  {
+   "name": "Tooling",
+   "baseline": 2000
+  },
+  {
+   "name": "Payer account, usage only",
+   "baseline": 20
+  },
+  {
+   "name": "Azure subscription",
+   "baseline": 100
+  }
+ ],
+ "aws_elasticity": 0.3,
+ "terminating_commitments": [
+  {
+   "name": "AWS unused commitment (savings plan billed by the reseller)",
+   "monthly": 9000,
+   "last_month_index": 4,
+   "category": "AWS",
+   "note": "example: ends after month 4; replace with the savings plan end month"
+  }
+ ],
+ "initiatives": [
+  {
+   "name": "Shrink managed Redis: move cold and bulk keyspaces to a KV store",
+   "target": "Cache (managed Redis)",
+   "scope": "all",
+   "saving": {
+    "P": 0.3,
+    "R": 0.5,
+    "O": 0.65
+   },
+   "added": {
+    "P": 0.2,
+    "R": 0.2,
+    "O": 0.15
+   },
+   "start": {
+    "P": 7,
+    "R": 5,
+    "O": 4
+   },
+   "ramp": 4,
+   "owner": "TBD",
+   "note": "Start after the cache CUD ends"
+  },
+  {
+   "name": "Move hosted inference to a cheaper provider",
+   "target": "AI / ML inference (hosted models)",
+   "scope": "all",
+   "saving": {
+    "P": 0.4,
+    "R": 0.65,
+    "O": 0.75
+   },
+   "start": {
+    "P": 5,
+    "R": 3,
+    "O": 3
+   },
+   "ramp": 3,
+   "owner": "TBD",
+   "note": "Keep frontier models where quality requires"
+  },
+  {
+   "name": "Observability usage trimmed to the committed floor",
+   "target": "Observability vendor (usage, amortized)",
+   "scope": "all",
+   "saving": {
+    "P": 0.1,
+    "R": 0.18,
+    "O": 0.25
+   },
+   "start": {
+    "P": 4,
+    "R": 2,
+    "O": 2
+   },
+   "ramp": 3,
+   "owner": "TBD",
+   "note": "Amortized only within the term"
+  },
+  {
+   "name": "Compute right-sizing and committed-use coverage",
+   "target": "Compute (VMs, Kubernetes nodes, VM management)",
+   "scope": "all",
+   "saving": {
+    "P": 0.08,
+    "R": 0.15,
+    "O": 0.2
+   },
+   "start": {
+    "P": 6,
+    "R": 4,
+    "O": 4
+   },
+   "ramp": 4,
+   "owner": "TBD",
+   "note": "Stay above the flexible CUD commitment"
+  },
+  {
+   "name": "Non-prod scale-to-zero (qa/dev off nights and weekends)",
+   "target": "Compute (VMs, Kubernetes nodes, VM management)",
+   "scope": "qa+dev",
+   "saving": {
+    "P": 0.05,
+    "R": 0.08,
+    "O": 0.1
+   },
+   "start": {
+    "P": 5,
+    "R": 3,
+    "O": 3
+   },
+   "ramp": 3,
+   "owner": "TBD",
+   "note": "Sized on the whole compute line, allocated to qa and dev projects only"
+  },
+  {
+   "name": "Egress optimization (compression, regional routing, CDN)",
+   "target": "Networking (egress, load balancing, DNS)",
+   "scope": "all",
+   "saving": {
+    "P": 0.1,
+    "R": 0.2,
+    "O": 0.25
+   },
+   "start": {
+    "P": 7,
+    "R": 5,
+    "O": 5
+   },
+   "ramp": 4,
+   "owner": "TBD",
+   "note": ""
+  },
+  {
+   "name": "Managed SQL consolidation",
+   "target": "Managed SQL",
+   "scope": "all",
+   "saving": {
+    "P": 0.15,
+    "R": 0.3,
+    "O": 0.35
+   },
+   "start": {
+    "P": 13,
+    "R": 12,
+    "O": 12
+   },
+   "ramp": 3,
+   "owner": "TBD",
+   "note": "Start after the 1-year SQL CUD ends"
+  },
+  {
+   "name": "Storage lifecycle (cold tiers, orphaned disks and snapshots)",
+   "target": "Object and file storage",
+   "scope": "all",
+   "saving": {
+    "P": 0.2,
+    "R": 0.3,
+    "O": 0.35
+   },
+   "start": {
+    "P": 4,
+    "R": 3,
+    "O": 3
+   },
+   "ramp": 2,
+   "owner": "TBD",
+   "note": ""
+  }
+ ],
+ "envelope": {
+  "amount_report_ccy": 500000,
+  "reseller_billed_share": 0.6,
+  "inside_kpi": 1,
+  "utilization": {
+   "P": 1.1,
+   "R": 1.0,
+   "O": 0.85
+  },
+  "weights": null,
+  "governance": [
+   "Governance: 1. One company-level line, never allocated to teams. 2. Spend through tagged projects so the cost module reports actuals against the envelope. 3. Release quarterly against an experiment registry: each experiment has a budget, a kill criterion and a 90-day kill-or-scale decision; unused rolls forward inside the year only. 4. Two vendor types: reseller-billed capacity (Net 30) and direct-billed AI/SaaS (next month). 5. KPI treatment decided by CEO and CFO (Inputs B20). 6. Size releases by the outcome they buy."
+  ]
+ },
+ "scenarios": {
+  "growth_yoy": {
+   "P": 0.3,
+   "R": 0.25,
+   "O": 0.2
+  },
+  "credit_month_index": {
+   "P": 12,
+   "R": 14,
+   "O": 16
+  },
+  "credit_amount": 250000,
+  "credit_note": "example: next spend-milestone credit; higher spend reaches it earlier"
+ },
+ "switches": {
+  "floor_year_fee_single": 1
+ },
+ "cash_events": [
+  {
+   "name": "Kafka vendor: quarterly installment 150,000 (marketplace)",
+   "amount": 150000,
+   "months": [
+    "Oct 2026",
+    "Jan 2027",
+    "Apr 2027",
+    "Jul 2027",
+    "Oct 2027"
+   ]
+  },
+  {
+   "name": "Lakehouse vendor: quarterly installment 70,000 (marketplace)",
+   "amount": 70000,
+   "months": [
+    "Nov 2026",
+    "Feb 2027",
+    "May 2027",
+    "Aug 2027",
+    "Nov 2027"
+   ],
+   "fallback_in_lag_months": 21000
+  },
+  {
+   "name": "KV store vendor: annual prepaid renewal 54,000",
+   "amount": 54000,
+   "months": [
+    "Jul 2027"
+   ]
+  },
+  {
+   "name": "Search vendor: annual prepaid renewal 36,000",
+   "amount": 36000,
+   "months": [
+    "Jul 2027"
+   ]
+  },
+  {
+   "name": "Observability vendor: monthly installment, current year",
+   "amount": 68000,
+   "months": [
+    "Sep 2026",
+    "Oct 2026",
+    "Nov 2026",
+    "Dec 2026"
+   ],
+   "fallback_in_lag_months": 68000
+  },
+  {
+   "name": "Observability vendor: plan-year base fee 720,000, single invoice (switch = 1)",
+   "amount": 720000,
+   "months": [
+    "Jan 2027"
+   ],
+   "switch_equals": 1
+  },
+  {
+   "name": "Observability vendor: plan-year base fee spread monthly (switch = 0)",
+   "amount": 60000,
+   "months": [
+    "Jan 2027",
+    "Feb 2027",
+    "Mar 2027",
+    "Apr 2027",
+    "May 2027",
+    "Jun 2027",
+    "Jul 2027",
+    "Aug 2027",
+    "Sep 2027",
+    "Oct 2027",
+    "Nov 2027",
+    "Dec 2027"
+   ],
+   "switch_equals": 0
+  }
+ ],
+ "cash_placeholders": [
+  "Messaging SaaS vendor (contract not yet read)"
+ ],
+ "cash_fallback": {
+  "gcp_usage": 149724.59,
+  "aws_usage": 17620
+ },
+ "commitments_register": [
+  {
+   "vendor": "Observability vendor (signed order form)",
+   "term": "3 years",
+   "total": 2200000,
+   "cadence": "Annual base fee via marketplace; monthly installments in the current year",
+   "mom_spread": 52000,
+   "next_event": "Plan-year fee in January",
+   "decision_point": "Early-renewal talk before year 2",
+   "note": "example"
+  },
+  {
+   "vendor": "Kafka vendor",
+   "term": "18 months",
+   "total": 900000,
+   "cadence": "Quarterly 150,000",
+   "mom_spread": 50000,
+   "next_event": "Oct 2026",
+   "decision_point": "Renewal decision 3 months before term end",
+   "note": "example"
+  },
+  {
+   "vendor": "Lakehouse vendor",
+   "term": "3 years",
+   "total": 840000,
+   "cadence": "Quarterly 70,000",
+   "mom_spread": 23333,
+   "next_event": "Nov 2026",
+   "decision_point": "Term end",
+   "note": "example"
+  },
+  {
+   "vendor": "Compute flexible CUD",
+   "term": "3 years",
+   "total": null,
+   "cadence": "Hourly inside the reseller invoice",
+   "mom_spread": 30000,
+   "next_event": "Monthly",
+   "decision_point": "Term end",
+   "note": "right-sizing must stay above the commitment"
+  },
+  {
+   "vendor": "Managed Redis CUD",
+   "term": "1 year",
+   "total": null,
+   "cadence": "Hourly inside the reseller invoice",
+   "mom_spread": 11000,
+   "next_event": "Monthly",
+   "decision_point": "Do not renew if the KV store shift proceeds",
+   "note": "gates the cache initiative"
+  },
+  {
+   "vendor": "Cloud credits program",
+   "term": "multi-year",
+   "total": null,
+   "cadence": "Posts at cumulative-spend milestones",
+   "mom_spread": null,
+   "next_event": "Next milestone",
+   "decision_point": "Ask the reseller for the schedule",
+   "note": "example"
+  }
+ ],
+ "cash_notes": [
+  "The first lag months pay the last actual invoices; baseline actuals are used as the proxy, including that month's vendor postings.",
+  "GCP usage adds excluded projects back at baseline spend with growth and no savings, because the company pays for them until they are billed separately; set Inputs B17 to 0 for the in-scope share (AWS stays 100%).",
+  "Overage above contract minimums and IT items are not in this sheet."
+ ],
+ "summary_notes": [
+  "Structure: Projects baseline, Lines, Initiatives, Innovation envelope, Shares, Projection P/R/O, Breakdown P/R/O, Cash flow P/R/O (by vendor), Cash by project P/R/O, Commitments, Sources and gaps.",
+  "Excluded projects carry their share of allocated vendors out of the projection; the company still pays those invoices until the entities are billed separately."
+ ],
+ "sources_and_gaps": [
+  "Sources",
+  "Reseller invoices: baseline month transcribed line by line; earlier months page 1 for support and marketplace postings.",
+  "Cloud console: CUD inventory and terms; incentives / credit milestones; month-to-date forecast.",
+  "Cost module: baseline month by product and by project; credit lines by type; monthly totals.",
+  "Contracts from email; CFO plan.",
+  "",
+  "Method",
+  "Account-level items allocated to all projects by baseline usage share; only the in-scope share enters the projection. Initiative savings sized on in-scope lines and spread by baseline mix within scope.",
+  "",
+  "Gaps",
+  "1. Order form totals. 2. Credit milestone schedule. 3. Commitment end dates. 4. Revenue basis matching the cost scope."
+ ]
+}
